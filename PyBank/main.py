@@ -5,7 +5,7 @@ totalmonths = []
 profits =[]
 change = []
 
-with open ("C:\\python-tets/budget_data.csv") as csv_file:
+with open ("Resources/budget_data.csv") as csv_file:
     csvreader = csv.reader(csv_file)
     csv_header = next (csvreader)
     for a in csvreader:
