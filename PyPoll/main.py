@@ -10,7 +10,6 @@ winning_count = 0
 winning_percentage = 0
 
 
-with open("C:\\python-tets/election_data.csv") as csv_file:
     csvreader = csv.reader(csv_file)
     csv_header = next(csvreader)
     
@@ -24,7 +23,7 @@ with open("C:\\python-tets/election_data.csv") as csv_file:
             
         candidateVotes[candidate_name] += 1
 
-with open("C:\\python-tets/election_r.txt", "w") as txtfile:
+with open("Resources/election_r.txt", "w") as txtfile:
     election_r = (
         f"\nElection Results\n"
         f"---------------------------------------\n"
